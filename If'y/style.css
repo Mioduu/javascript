@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#textAfter {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: red;
+    margin-top: 20%;
+    font-size: 70px;
+}
