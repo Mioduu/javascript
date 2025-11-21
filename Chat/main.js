@@ -19,6 +19,10 @@ function generateRandomReply() {
     let image = document.createElement("img")
     image.src = "Jolanta.jpg"
     image.alt = "Jolanta Nowak"
+    image.width = 100
+    image.height = 100
+    image.border = "1px solid black"
+    image.style.borderRadius = "64px"
     
     message.textContent = respond[respondIndex] 
     

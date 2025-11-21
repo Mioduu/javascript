@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eventy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button id="timeButton">Wyświetl datę</button>
     <p id="demo"></p>
     <input type="text" id="fname"><br>
-    <input type="text" id="sname">
+    <input type="text" id="sname"><br>
+    <input type="text" id="invisName" placeholder="Wpisz swoje imię">
+    <button id="myButton">Testuj</button>
+    <p id="demo2"></p>
+
+    <h3>removeEventListener - Usuwanie zdarzen</h3>
+
+    <div id="test">To jest div
+        <p>Kliknij przycisk aby usunąć zdarzenie</p>
+        <button id="eventBtn">Usuń zdarzenie</button>
+    </div>
+    <p id="demo3"></p>
+    <div id="obramowanieDiv">
+        <button id="obramowanieBtn">Dodaj obramowanie</button>
+    </div>
+    <div>Lista Kaw
+        <ul id="coffeeList">
+            <li>Czarna</li>
+        </ul>
+        <button id="coffeeBtn">Dodaj elementy</button>
+    </div>
+
+    <div>Lista elementów
+        <ol id="elementList" type="1">
+        </ol>
+        <button id="elementBtn">Dodaj element numerowany</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
