@@ -8,6 +8,6 @@ document.body.appendChild(newText)
 let textElement = document.createElement("p")
 let newDiv = document.createElement("div")
 
-textElement.textContent = "Skibidi"
+textElement.textContent = "Giga fajny tekst"
 newDiv.append(textElement)
 document.body.appendChild(newDiv)
