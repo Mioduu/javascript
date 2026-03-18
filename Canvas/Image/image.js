@@ -1,0 +1,7 @@
+const canvas = document.querySelector("#canvas")
+const ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.moveTo(20,20)
+ctx.lineTo(40,70)
+ctx.lineTo(50,40)
+ctx.stroke()
