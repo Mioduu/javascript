@@ -1,0 +1,9 @@
+const canvas = document.getElementById("canvas")
+const ctx = canvas.getContext("2d")
+for(let i = 0; i < 3; i++) {
+    ctx.save()
+    ctx.fillStyle = `rgb(${51 * i}, ${255 - 51 * i}, 255)`
+    ctx.translate(10 + i * 50, 10)
+    ctx.fillRect(0, 0, 25, 25)
+    ctx.restore()
+}
