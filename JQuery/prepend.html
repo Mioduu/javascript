@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animacja</title>
+    <title>Attribute</title>
 </head>
 <body>
-    <h1>Prosta animacja</h1>
+    <h1>Dodawanie wartości prepend</h1>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function($){
             $("button").click(function(){
-                $("div").animate({ left: "250px",
-                    opacity: "0.5",
-                    height: "50px",
-                    width: "50px"
-                })
+                alert($("#text").prepend("<b> Appended text</b>"))
             })
         })
     </script>
-    <button>Start animation</button>
-    <div style="background:green; height:100px; width:100px; position: absolute;"></div>
+    <p id="text">This is a paragraph</p>
+    <button>Dodaj zawartość</button>
 </body>
 </html>

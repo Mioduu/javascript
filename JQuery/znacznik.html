@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Znaczniki</title>
+</head>
+<body>
+    <h1>Odczytanie znacznika (Nie jego value)</h1>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function($) {
+            $("button").click(function(){
+                alert("Text: " + $("#test").html())
+            })
+        })
+    </script>
+    <p id="test">This is some <b>bold</b> text in the paragraph</p>
+    <button>Show text</button>
+</body>
+</html>
