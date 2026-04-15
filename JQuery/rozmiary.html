@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozmiary</title>
+</head>
+<body>
+    <h1>Zmiana rozmiaru</h1>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function($){
+            $("button").click(function(){
+                var text = ""
+                text += "Width of div: " + $("#div1").width() + "<br>"
+                text += "Height of div: " + $("#div1").height()
+                console.log($("#div1").height())
+                $("#div1").html(text)
+            })
+        })
+        
+    </script>
+    <style>
+        #div1 {
+            height: 50px;
+            width: 200px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+
+    <div id="div1"></div>
+    <button>Display dimensions of div</button>
+</body>
+</html>
