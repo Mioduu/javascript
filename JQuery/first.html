@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+</head>
+<body class="siblings">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function($){
+            $("div").first().css({"background-color": "yellow"})
+        })
+    </script>
+    <style>
+        .siblings {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <div style="border: 1px solid black;">
+        <p>A paragraph in a div.</p>
+    </div>
+    <div style="border: 1px solid black;">
+        <p>A paragraph in another div.</p>
+    </div>
+</body>
+</html>
