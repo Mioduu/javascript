@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    background: rgb(212, 211, 211);
+}
+
+.scoreDisplay {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex; 
+    justify-content: center;
+}
+
+.grid {
+    position: relative;
+    justify-self: center;
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.top, .bottom, .left, .right {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.popup {
+    position: fixed;        
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none
+}
+
+.playAgain {
+    position: fixed;     
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;   
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.snake {
+    background: blue;
+}
+
+.apple {
+    background: red;
+    border-radius: 20px;
+}
